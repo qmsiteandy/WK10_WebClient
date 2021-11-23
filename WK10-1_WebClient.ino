@@ -38,7 +38,7 @@ void ClientRequest(String value1, String value2){
   if (client.connect(host, httpPort)) {
     
     //Webhook API
-    String url += "/trigger/" + String(event) + "/with/key/" + String(apiKey);
+    String url = "/trigger/" + String(event) + "/with/key/" + String(apiKey);
     //Query String
     url += "?value1=" + value1 + "&value2=" + value2;
 
